@@ -302,6 +302,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1539377654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2056772315666344891, guid: 066e344d2c89ac54e90edfff1c40f169,
+    type: 3}
+  m_PrefabInstance: {fileID: 2056772317220704636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1539377655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539377654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92dfc059dc5e04fbcaafd772f2e4393d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 0}
+  key: 273
+  pushStrength: 5
+  axis: 1
+  relativeAxis: 1
+--- !u!114 &1539377656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539377654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c7bb76e85354455909e3f696d0e13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 0}
+  typeOfControl: 0
+  speed: 5
 --- !u!4 &1827306187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2056772315666344887, guid: 066e344d2c89ac54e90edfff1c40f169,
@@ -315,6 +353,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2056772315666344885, guid: 066e344d2c89ac54e90edfff1c40f169,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2056772315666344887, guid: 066e344d2c89ac54e90edfff1c40f169,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -375,5 +418,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2056772315666344884, guid: 066e344d2c89ac54e90edfff1c40f169, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 066e344d2c89ac54e90edfff1c40f169, type: 3}
